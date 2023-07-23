@@ -1,6 +1,8 @@
 //Basic React Component
 
 import React from 'react'
+import Users from '@/components/users';
+
 
 async function FetchUsers(){
  const res =  await fetch("https://reqres.in/api/users");
@@ -13,10 +15,7 @@ async function Index() {
   const users = await FetchUsers();
   return (
     <div>
-      <h1>Esta es la página de Index</h1>
-      <div>
-        {JSON.stringify(users)}
-      </div>
+      <Users users={users} />
     </div>
   )
 }
