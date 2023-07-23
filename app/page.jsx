@@ -1,7 +1,7 @@
 //Basic React Component
 
 import React from 'react'
-import Users from '@/components/users';
+import Users from '../components/Users';
 
 
 async function FetchUsers(){
