@@ -1,6 +1,6 @@
 // listado de usuarios (componente)
 "use client";
-import { useRouter } from "next/Navigation";
+import { useRouter } from "next/navigation";
 
 function Users({ users }) {
     const router = useRouter()
